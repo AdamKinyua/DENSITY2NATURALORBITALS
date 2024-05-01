@@ -1,0 +1,11 @@
+
+ *************************************************************************
+  Natural Orbitals Calculator
+ *************************************************************************
+
+                              Version 23.1.0
+
+L. M. Thompson &  A. M. Kinyua, Louisville KY, 2022.
+
+ MQC ERROR: Error opening file
+    fileName = input.txt

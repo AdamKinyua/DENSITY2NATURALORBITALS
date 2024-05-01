@@ -1,0 +1,40 @@
+Main/density2NaturalOrbitals
+
+NAME
+    density matrix to natural orbitals converter
+
+SYNOPSIS
+    Takes density matrix from adiabatic or sudden time dependent configuration interraction time 
+    evolution and returns corresponding natural orbitals.
+
+USAGE 
+    ~/DENSITY2NATURALORBITALS/density2NatOrbs.exe -f input.txt --densitydifference 'yes' > output.txt
+        
+        - the above command returns the density difference natural orbitals between t and t+dt
+
+    ~/DENSITY2NATURALORBITALS/density2NatOrbs.exe -f input.txt --densitydifference 'no' > output.txt
+        
+        - the above command returns the natural orbitals at time t
+
+OPTIONS
+    1. Input/Output
+        input.txt              contains matrix files. The first line indicates the number of matrices
+                               in the input.txt while the subsequent lines contains matrices in ascen-
+                               ding order.
+
+                               Example formation of input.txt
+    
+                              ----------------
+                              | 3
+                              | matrix1.mat
+                              | matrix2.mat
+                              | matrix3.mat
+
+    2. Density difference
+        Yes                   Allows computation of density difference between state at time t=t and t=0
+        No                    Only computates natural orbitals at time t
+
+
+NAMING CONVECTION IN THE OUTPUT FILE
+    Canonical orbitals are named relative to HOMO and LUMO
+    Natural orbitals are named relative to Highest occupied natural orbital (HONO) and Lowest unoccupied natural orbital (LUNO)  

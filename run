@@ -1,0 +1,10 @@
+#! /bin/bash
+
+set -e 
+
+echo 'running natural orbitals analysis... ...'
+
+~/matDiffNOCalc/NOCalc.exe -f input.txt --densitydifference 'no' > output.txt
+
+echo ' '
+echo 'Done!'
